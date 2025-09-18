@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aher Cafe — Authentic Indian Tea, Coffee & Snacks</title>
+  <meta name="description" content="Aher Cafe — Authentic Indian Tea, Coffee & Snacks. Order online or visit us for fresh chai, filter coffee and homemade snacks." />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--accent:#C44E39;--dark:#222;--muted:#666;--card:#fff;--bg:#f7f7f7}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--dark)}
+    a{color:inherit;text-decoration:none}
+    header{background:linear-gradient(90deg,#fff 0 60%,rgba(196,78,57,0.03) 60%);padding:18px 6vw;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:56px;height:56px;border-radius:12px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-family:Montserrat,Roboto,Arial}
+    nav{display:flex;gap:18px;align-items:center}
+    .btn{background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;border:0;font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;padding:48px 6vw;align-items:center}
+    .hero h1{font-family:Montserrat,Roboto;font-size:34px;margin:0 0 12px}
+    .lead{color:var(--muted);margin-bottom:18px}
+    .cta-row{display:flex;gap:12px}
+    .card{background:var(--card);border-radius:14px;box-shadow:0 6px 18px rgba(30,30,30,0.06);padding:18px}
+
+    .menu{padding:18px 6vw 60px}
+    .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .menu-item{display:flex;gap:12px;align-items:center}
+    .dish-img{width:68px;height:68px;border-radius:10px;flex:0 0 68px;background:#eee;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+    .dish-title{font-weight:600}
+    .dish-desc{color:var(--muted);font-size:14px}
+    .price{margin-left:auto;font-weight:700}
+
+    footer{padding:26px 6vw;background:linear-gradient(180deg,transparent,rgba(196,78,57,0.02));display:flex;justify-content:space-between;gap:20px}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;gap:24px;padding:30px 5vw}
+      nav{display:none}
+      .logo{width:48px;height:48px}
+      .hero h1{font-size:28px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">AC</div>
+      <div>
+        <div style="font-weight:700">Aher Cafe</div>
+        <div style="font-size:13px;color:var(--muted)">Authentic Indian Tea & Snacks</div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button class="btn">Order Online</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Fresh Chai, Filter Coffee & Homemade Snacks — Every Day</h1>
+      <p class="lead">Handmade recipes, locally sourced ingredients and the warmth of a neighbourhood cafe. Try our Masala Chai and Vada Pav — crowd favourites.</p>
+      <div class="cta-row">
+        <a class="btn" href="#menu">View Menu</a>
+        <a style="display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;background:#fff;border:1px solid #eee" href="#contact">Visit Us</a>
+      </div>
+
+      <div style="height:18px"></div>
+
+      <div class="card" style="max-width:560px">
+        <strong>Today's special</strong>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px">
+          <div>
+            <div style="font-weight:700">Kesar Elaichi Chai</div>
+            <div style="color:var(--muted);font-size:13px">Aromatic tea brewed with saffron and cardamom</div>
+          </div>
+          <div style="font-weight:700">₹60</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="card" style="text-align:center">
+        <div style="font-size:13px;color:var(--muted);margin-bottom:8px">Open today</div>
+        <div style="font-size:20px;font-weight:700">8:00 AM — 9:00 PM</div>
+        <div style="margin-top:12px;color:var(--muted)">123, MG Road, Pune</div>
+        <div style="margin-top:16px">
+          <button class="btn" style="width:100%">Call to Order</button>
+        </div>
+      </div>
+
+      <div style="height:16px"></div>
+
+      <div class="card" style="display:flex;gap:12px;align-items:center;margin-top:8px">
+        <div style="flex:1">
+          <div style="font-weight:700">Pickup & Delivery</div>
+          <div style="color:var(--muted);font-size:13px">We deliver within 5 km</div>
+        </div>
+        <div style="font-weight:700">Delivery ₹30</div>
+      </div>
+    </div>
+  </section>
+
+  <main id="menu" class="menu">
+    <h2 style="font-family:Montserrat,Roboto;font-size:22px;margin:0 0 12px">Menu</h2>
+    <p style="margin:0 0 18px;color:var(--muted)">Popular items — freshly prepared daily</p>
+
+    <div class="menu-grid">
+      <div class="card menu-item">
+        <div class="dish-img">Chai</div>
+        <div>
+          <div class="dish-title">Masala Chai</div>
+          <div class="dish-desc">Spiced milk tea — strong & comforting</div>
+        </div>
+        <div class="price">₹40</div>
+      </div>
+
+      <div class="card menu-item">
+        <div class="dish-img">Coffee</div>
+        <div>
+          <div class="dish-title">Filter Coffee</div>
+          <div class="dish-desc">South Indian filter coffee — rich & frothy</div>
+        </div>
+        <div class="price">₹50</div>
+      </div>
+
+      <div class="card menu-item">
+        <div class="dish-img">Vada</div>
+        <div>
+          <div class="dish-title">Vada Pav</div>
+          <div class="dish-desc">Classic Mumbai street snack with chutney</div>
+        </div>
+        <div class="price">₹45</div>
+      </div>
+
+      <div class="card menu-item">
+        <div class="dish-img">Samosa</div>
+        <div>
+          <div class="dish-title">Samosa</div>
+          <div class="dish-desc">Crispy potato pastry with spices</div>
+        </div>
+        <div class="price">₹30</div>
+      </div>
+
+      <div class="card menu-item">
+        <div class="dish-img">Toast</div>
+        <div>
+          <div class="dish-title">Grilled Sandwich</div>
+          <div class="dish-desc">Cheese & veg sandwich — toasted</div>
+        </div>
+        <div class="price">₹80</div>
+      </div>
+
+      <div class="card menu-item">
+        <div class="dish-img">Sweet</div>
+        <div>
+          <div class="dish-title">Gulab Jamun</div>
+          <div class="dish-desc">Soft milk dumplings in syrup</div>
+        </div>
+        <div class="price">₹40</div>
+      </div>
+
+    </div>
+  </main>
+
+  <section id="about" style="padding:20px 6vw">
+    <div class="card">
+      <h3 style="margin:0 0 8px">About Aher Cafe</h3>
+      <p style="margin:0;color:var(--muted)">A neighbourhood cafe serving homemade recipes with love. We focus on simple flavours, friendly service and great tea.</p>
+    </div>
+  </section>
+
+  <section id="contact" style="padding:20px 6vw 60px;display:grid;grid-template-columns:1fr 320px;gap:18px">
+    <div class="card">
+      <h3>Get in touch</h3>
+      <form onsubmit="event.preventDefault();alert('Thanks — we\'ll get back to you!')">
+        <div style="margin-top:12px">
+          <label style="display:block;font-size:13px;color:var(--muted)">Name</label>
+          <input required style="width:100%;padding:10px;border-radius:8px;border:1px solid #eee;margin-top:6px" />
+        </div>
+        <div style="margin-top:12px">
+          <label style="display:block;font-size:13px;color:var(--muted)">Phone / Email</label>
+          <input required style="width:100%;padding:10px;border-radius:8px;border:1px solid #eee;margin-top:6px" />
+        </div>
+        <div style="margin-top:12px">
+          <label style="display:block;font-size:13px;color:var(--muted)">Message</label>
+          <textarea style="width:100%;padding:10px;border-radius:8px;border:1px solid #eee;margin-top:6px" rows="4"></textarea>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:8px">
+          <button class="btn" type="submit">Send</button>
+          <button type="reset" style="padding:10px;border-radius:8px;border:1px solid #eee;background:#fff">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <div>
+      <div class="card" style="margin-bottom:12px">
+        <div style="font-weight:700">Location</div>
+        <div style="color:var(--muted);margin-top:6px">123 MG Road, Pune — Near Central Park</div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:700">Hours</div>
+        <div style="color:var(--muted);margin-top:6px">Mon–Sun: 8:00 AM — 9:00 PM</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div style="color:var(--muted)">© "Aher Cafe" — Fresh tea & snacks</div>
+    <div style="display:flex;gap:12px;align-items:center;color:var(--muted)">Follow us: <span style="font-weight:700">@ahercafe</span></div>
+  </footer>
+
+</body>
+</html>
